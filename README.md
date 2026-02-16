@@ -64,4 +64,38 @@ Advantages
 
 # Gaussian Mixture Models
 
+Gausian Mixture Models (GMMs) are probabilistic clustering models that represent data as a mixture of multiple Gaussian distribution (Reynolds 2009 and McLachian and Peel 2004).
+
+# Why GMM?
+
+GMM offer several advantages over K-means:
+
+- Soft clustering: each pixel is assigned a probability of belonging to each class.
+- Flexible cluster geometry: clusters can vary in size, orientation and shape
+
+# Key Components
+
+- Number of Gaussian components
+- Expectation-Maximisation (EM) algorithm
+- Covariance structure: spherical, diagonal, tied or full
+
+# EM Algorithm
+- Expectation (E-step): compute membership probabilites for each data point.
+- Maximisation (M-step): update Gaussian parameters to maximise likelihood.
+
+This process is repeated until model convergence.
+
+# Advantages
+
+- Probabilistic classification
+- Handles overlapping classes
+- More realistic representation of geophysical data distributions.
+
+# Getting Started
+
+This project is implemented using Google Colab, a cloud-based python environment that provides:
+
+- Free access to GPU/TPU resources
+- Seamless inegration with Google Drive
+- Easy sharing and reproducibility
 
