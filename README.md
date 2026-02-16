@@ -7,6 +7,17 @@ This projects utilises unsupervised machine learning technoques to discriminate 
 We will be using a two cluster approach implementing abd comparing:
 
 - K-mean clusterin
-- -Gaussian Mixture Models (GMM)
+- Gaussian Mixture Models (GMM)
 
 The project is developed and run entirely in google colab
+
+# Table of Contents
+- Introduction
+- Unsupervised Learning Methods
+- - K-means Clustering
+  - Gaussian Mixture Models
+- Getting Started
+- Installation
+- Data Description
+- Contact
+- Acknowledgments
