@@ -1,7 +1,7 @@
 # GEOL0069-AI-Week-4
 GEOL0069 Ai Week 4 GitHub submission
 
-# Sea-Ice abd Lead Unsupervised Classification
+# Sea-Ice and Lead Unsupervised Classification
 This projects utilises unsupervised machine learning technoques to discriminate sea ice and leads from satellite imagery. The satelite used to collect the data was the Sentinel-3 OLCI. This project will compare unsupervised classifications against ESA-provided ground truth products to evaluate model performance,
 
 We will be using a two cluster approach implementing abd comparing:
@@ -21,3 +21,47 @@ The project is developed and run entirely in google colab
 - Data Description
 - Contact
 - Acknowledgments
+
+# Introduction
+
+Sea ice plays a critical role in the Earth's climate system by regulating heat exchanges, ocean circulation, and albedo. Leads are fractures in the ice which are particularly important as they enhance heat and moisture fluxes between the ocean and atmopshere.
+
+The accurate identification of sea ice and leads from satellite data is crucial for 
+
+- Climate modelling
+- Polar Navigation
+- Environmental monitoring
+
+  This project will explore whether unsupervised learning methods can successfully classify sea ice and leads without labelled training data.
+
+# Unsupervised Learning Methods
+
+# K-means Clustering
+
+k-means clustering is a form of unsupervised learning it is an algorithm that partitions a dataset into k predefined clusters by minimising within-cluster variance (MacQueen, 1967).
+
+# Why K-means?
+
+K-means is advantagous as:
+
+- It does not require prior knowledge of data labels
+- It is computationally efficient and scalable
+- It is easy to implement and interpret
+
+# Key Components
+
+- Number of clusters (k): defined by the user
+- Centroid initialisation: affects convergence and final cluster placement
+- Assignment step: data points are assigned to the nearest centroid using Euclidean distance.
+- Update step: Centroids are recalculated as the mean of assigned points.
+
+The assignmetn are update requirements are repeated iteratively until convergence is achieved, typically reaching a local minimum in variance
+
+Advantages
+- Fast and computationally efficient
+- Simple to interpret
+- Suitable for large satellite datasets
+
+# Gaussian Mixture Models
+
+
