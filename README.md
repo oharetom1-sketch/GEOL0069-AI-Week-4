@@ -103,12 +103,10 @@ plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, cmap='viridis')
 centers = kmeans.cluster_centers_
 plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)
 plt.show()
-```
-
 ## Example K-means Clustering Output
 
-![K-means clustering example](figures/kmeans_clustering.png)
-
+![K-means clustering example](figures/K-means_Clustering.png)
+```
 
 # Gaussian Mixture Models
 
