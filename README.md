@@ -57,6 +57,22 @@ The following python packages are required
 !pip install basemap
 !pip install cartopy
 ```
+# Data Description
+
+This prpject willl use data from the sentinel-2 optical imagery and the sentinel-3 OLCI data obtained from the Copernicus Data Space.
+
+Data Folders
+
+- Sentinel-2 Optical Data
+```
+S2A_MSIL1C_20190301T235611_N0207_R116_T01WCU_20190302T014622.SAFE
+```
+
+- Sentinel-3 OLCI Data
+```
+S3A_SR_2_LAN_SI_20190307T005808_20190307T012503_20230527T225016_1614_042_131______LN3_R_NT_005.SEN3
+```
+
 # Unsupervised Learning Methods
 
 # K-means Clustering
@@ -162,5 +178,10 @@ plt.show()
 # Example of a Gaussian Mixture Model
 
 ![Gaussian Mixture Model](GMM.png)
+
+# Contact
+
+Thomas O'Hare
+ucfbtoh@ucl.ac.uk
 
 
