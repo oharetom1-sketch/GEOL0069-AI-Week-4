@@ -77,7 +77,7 @@ S3A_SR_2_LAN_SI_20190307T005808_20190307T012503_20230527T225016_1614_042_131____
 
 # K-means Clustering
 
-k-means clustering is a form of unsupervised learning it is an algorithm that partitions a dataset into k predefined clusters by minimising within-cluster variance (MacQueen, 1967).
+k-means clustering is a form of unsupervised learning it is an algorithm that partitions a dataset into k predefined clusters by minimising within-cluster variance.
 
 # Why K-means?
 
@@ -94,7 +94,7 @@ K-means is advantagous as:
 - Assignment step: data points are assigned to the nearest centroid using Euclidean distance.
 - Update step: Centroids are recalculated as the mean of assigned points.
 
-The assignmetn are update requirements are repeated iteratively until convergence is achieved, typically reaching a local minimum in variance
+The assignment update requirements are repeated iteratively until convergence is achieved, typically reaching a local minimum in variance.
 
 Advantages
 - Fast and computationally efficient
@@ -126,7 +126,7 @@ plt.show()
 
 # Gaussian Mixture Models
 
-Gausian Mixture Models (GMMs) are probabilistic clustering models that represent data as a mixture of multiple Gaussian distribution (Reynolds 2009 and McLachian and Peel 2004).
+Gausian Mixture Models (GMMs) are probabilistic clustering models that represent data as a mixture of multiple Gaussian distribution.
 
 # Why GMM?
 
