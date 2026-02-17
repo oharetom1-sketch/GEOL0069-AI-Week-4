@@ -34,6 +34,29 @@ The accurate identification of sea ice and leads from satellite data is crucial 
 
   This project will explore whether unsupervised learning methods can successfully classify sea ice and leads without labelled training data.
 
+  # Getting Started
+
+This project is implemented using Google Colab, a cloud-based python environment that provides:
+
+- Free access to GPU/TPU resources
+- Seamless inegration with Google Drive
+- Easy sharing and reproducibility
+
+To run the notebook:
+- Open the .ipynb file in this repository.
+- Click "Open in Colab"
+- Ensure required data are correctly linked
+
+# Installation
+
+The following python packages are required
+
+```Python 
+!pip install rasterio
+!pip install netCDF4
+!pip install basemap
+!pip install cartopy
+```
 # Unsupervised Learning Methods
 
 # K-means Clustering
@@ -61,6 +84,65 @@ Advantages
 - Fast and computationally efficient
 - Simple to interpret
 - Suitable for large satellite datasets
+
+# Python code for K-means clustering
+```from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+X = np.random.rand(100, 2)
+
+# K-means model
+kmeans = KMeans(n_clusters=4)
+kmeans.fit(X)
+y_kmeans = kmeans.predict(X)
+
+# Plotting
+plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, cmap='viridis')
+centers = kmeans.cluster_centers_
+plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)
+plt.show()
+
+/figures/kmeans_clustering.png
+
+
+```
+
+```
+# Python code for K-means clustering
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+X = np.random.rand(100, 2)
+
+# K-means model
+kmeans = KMeans(n_clusters=4, random_state=42)
+kmeans.fit(X)
+y_kmeans = kmeans.predict(X)
+
+# Plotting
+plt.figure(figsize=(6, 6))
+plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, cmap='viridis')
+centers = kmeans.cluster_centers_
+plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)
+plt.title("K-means clustering of sample data")
+
+# 🔴 IMPORTANT LINE
+plt.savefig("kmeans_clustering.png", dpi=300, bbox_inches="tight")
+
+plt.show()
+
+/figures/kmeans_clustering.png
+
+```
+
+## Example K-means Clustering Output
+
+![K-means clustering example](figures/kmeans_clustering.png)
+
 
 # Gaussian Mixture Models
 
@@ -91,20 +173,4 @@ This process is repeated until model convergence.
 - Handles overlapping classes
 - More realistic representation of geophysical data distributions.
 
-# Getting Started
-
-This project is implemented using Google Colab, a cloud-based python environment that provides:
-
-- Free access to GPU/TPU resources
-- Seamless inegration with Google Drive
-- Easy sharing and reproducibility
-
-To run the notebook:
-- Open the .ipynb file in this repository.
-- Click "Open in Colab"
-- Ensure required data are correctly linked
-
-# Installation
-
-The following python packages are required
 
