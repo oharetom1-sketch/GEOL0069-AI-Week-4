@@ -159,5 +159,8 @@ plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)
 plt.title('Gaussian Mixture Model')
 plt.show()
 ```
+# Example of a Gaussian Mixture Model
+
+![Gaussian Mixture Model](GMM.png)
 
 
