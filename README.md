@@ -103,40 +103,6 @@ plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, cmap='viridis')
 centers = kmeans.cluster_centers_
 plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)
 plt.show()
-
-/figures/kmeans_clustering.png
-
-
-```
-
-```
-# Python code for K-means clustering
-from sklearn.cluster import KMeans
-import matplotlib.pyplot as plt
-import numpy as np
-
-# Sample data
-X = np.random.rand(100, 2)
-
-# K-means model
-kmeans = KMeans(n_clusters=4, random_state=42)
-kmeans.fit(X)
-y_kmeans = kmeans.predict(X)
-
-# Plotting
-plt.figure(figsize=(6, 6))
-plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, cmap='viridis')
-centers = kmeans.cluster_centers_
-plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)
-plt.title("K-means clustering of sample data")
-
-# 🔴 IMPORTANT LINE
-plt.savefig("kmeans_clustering.png", dpi=300, bbox_inches="tight")
-
-plt.show()
-
-/figures/kmeans_clustering.png
-
 ```
 
 ## Example K-means Clustering Output
