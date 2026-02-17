@@ -99,3 +99,12 @@ This project is implemented using Google Colab, a cloud-based python environment
 - Seamless inegration with Google Drive
 - Easy sharing and reproducibility
 
+To run the notebook:
+- Open the .ipynb file in this repository.
+- Click "Open in Colab"
+- Ensure required data are correctly linked
+
+# Installation
+
+The following python packages are required
+
