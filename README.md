@@ -106,7 +106,7 @@ plt.show()
 ```
 # Example K-means Clustering Output
 
-![K-means clustering example](K-means_Clustering.png)
+![K-means clustering](K-means_Clustering.png)
 
 # Gaussian Mixture Models
 
