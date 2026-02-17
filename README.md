@@ -106,7 +106,7 @@ plt.show()
 ```
 # Example K-means Clustering Output
 
-![K-means Clustering](K-means_Clustering.png)
+![K-means clustering](K-means%20Clustering.png)
 
 # Gaussian Mixture Models
 
@@ -136,5 +136,28 @@ This process is repeated until model convergence.
 - Probabilistic classification
 - Handles overlapping classes
 - More realistic representation of geophysical data distributions.
+
+# Python code for Gaussian Mixture Models
+
+```
+from sklearn.mixture import GaussianMixture
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+X = np.random.rand(100, 2)
+
+# GMM model
+gmm = GaussianMixture(n_components=3)
+gmm.fit(X)
+y_gmm = gmm.predict(X)
+
+# Plotting
+plt.scatter(X[:, 0], X[:, 1], c=y_gmm, cmap='viridis')
+centers = gmm.means_
+plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)
+plt.title('Gaussian Mixture Model')
+plt.show()
+```
 
 
