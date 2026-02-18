@@ -13,11 +13,11 @@ The project is developed and run entirely in google colab
 
 # Table of Contents
 - Introduction
-- Unsupervised Learning Methods
-  - K-means Clustering
-  - Gaussian Mixture Models
 - Getting Started
 - Installation
+-  Unsupervised Learning Methods
+  - K-means Clustering
+  - Gaussian Mixture Models
 - Data Description
 - Contact
 - Acknowledgments
